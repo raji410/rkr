@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RKR Enginerring College</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header{
+                display:flex;
+                gap:20vw;
+                width:100%;
+                height:20vh;
+                background-color:rgb(162, 235, 178);
+            }
+            img{
+                height:15vh;
+                width:10vw;
+                margin-top:2vh;
+                margin-left:5vw ;
+            }
+            #section-1{
+                height:50vh;
+                background-color: rgb(214, 245, 225);
+            }
+            cite{
+                font-size: 200%;
+                position:relative;
+                top: 10vh;
+                bottom:10vh;
+            }
+            #one{
+                display: flex;
+                gap:20vw;
+                position:relative;
+                top: 20vh;
+                bottom:10vh;
+                margin-left: 10vw;
+            }
+            #section-2{
+                background-color:rgb(162, 235, 178);
+                height:30vh;
+            }
+            #dept{
+                display:flex;
+                gap:20vw;
+                margin-top:5vh;
+                background-color: white;
+            }
+            #form{
+                width:100%;
+                height:75vh;
+                background-color: rgb(8, 245, 91);
+                padding-top: 5vh;
+                text-align: center;
+            }
+            button{
+                height: 7vh;
+                width:12vw;
+                border-radius: 10%;
+            }
+            button:hover{
+                background-color: rgb(99, 248, 94);
+            }
+            footer{
+                text-align: center;
+                height: 10vh;
+                width:100%;
+                background-color: rgb(139, 247, 136);
+                padding-top:3vh;
+                font-size: 5vh;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="rkr.jpg" alt="logo">
+            </div>
+            <h1 style="margin-top: 7vh;">R.K.R Institute of Technology</h1>
+        </header>
+        <section id="section-1">
+            <center><cite>"Education is the passport to the future, for tomorrow belongs to those who prepare for it today."</cite></center>
+                <div id="one">
+                <p>
+                    <b>Address</b><br>
+                    Abul Nagar,<br>
+                    Near KYC Market,<br>
+                    Chennai-600001.
+                </p>
+                <p>
+                    <ul>
+                        <li>Top Enginnering College in Tamil Nadu</li>
+                        <li>100% Results in Exams</li>
+                        <li>We provide more practical knowlege</li>
+                        <li>Good Placements</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section id="section-2">
+            <center><h3>Available Dept</h3></center>
+            <div id="dept">
+                <div id="cse">
+                    <h4>Computer Science and Engineering</h4>
+                </div>
+                <div id="ece">
+                    <h4>Electronice and Communication Engineering</h4>
+                </div>
+                <div id="it">
+                    <h4>Information Technology</h4>
+                </div>
+                <div id="mech">
+                    <h4>Mechanical Engineering</h4>
+                </div>
+            </div>
+        </section>
+        <section id="section-3">
+            <center><h2>Application Form</h2></center>
+            <form id="form" method="post" action="coll.js">
+                <label for="name">Applicant Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter Your Name"><br><br>
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" name="dob" required placeholder="Enter Your dob"><br><br>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required placeholder="Enter Your age"><br><br>
+                <label for="place">Place</label>
+                <input type="text" id="place" name="place" required placeholder="Enter Your place"><br><br>
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required placeholder="Enter Your Phone Number"><br><br>
+                <label for="email">Email Id</label>
+                <input type="email" id="email" name="email" required placeholder="Enter Your Email Id"><br><br>
+                <label for="mark1">HSC Mark</label>
+                <input type="text" id="mark1" name="makr1" required placeholder="Enter Your HSC Mark"><br><br>
+                <label for="mark2">SSLC Mark</label>
+                <input type="text" id="mark2" name="mark2" required placeholder="Enter Your SSLC Mark"><br><br>
+                <label >Which do you like to Apply?</label>
+                <input type="radio" id="dept1" name="dept" value="CSE" required ><label for="dept1">CSE</label>
+                <input type="radio" id="dept2" name="dept" value="ECE" required ><label for="dept2">ECE</label>
+                <input type="radio" id="dept3" name="dept" value="IT" required ><label for="dept3">IT</label>
+                <input type="radio" id="dept4" name="dept" value="Mechanical" required ><label for="dept4">Mech</label><br><br>
+                <button>Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p>Thank You for your visit!</p>
+        </footer>
+
+    </body>
+</html>
